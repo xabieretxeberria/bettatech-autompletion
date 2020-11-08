@@ -1,0 +1,13 @@
+{
+  "name": "bettatech-autocompletion",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "alsatian \"./test/*.test.ts\""
+  },
+  "author": "Xabi Etxeberria",
+  "license": "ISC",
+  "devDependencies": {
+    "alsatian": "^3.2.1"
+  }
+}
