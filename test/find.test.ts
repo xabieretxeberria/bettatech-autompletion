@@ -24,7 +24,11 @@ export class FindTest {
         const trie = this.setupTrie();
         const result: string[] = trie.find("");
 
+        Expect(result.includes('')).toBe(false);
         Expect(result.length).toBe(3);
+        Expect(result.includes('trie')).toBe(true);
+        Expect(result.includes('try')).toBe(true);
+        Expect(result.includes('tree')).toBe(true);
     }
 
     @Test("Find common prefix between all the words")
@@ -32,6 +36,10 @@ export class FindTest {
         const trie = this.setupTrie();
         const result: string[] = trie.find("tr");
 
+        Expect(result.includes('')).toBe(false);
         Expect(result.length).toBe(3);
+        Expect(result.includes('trie')).toBe(true);
+        Expect(result.includes('try')).toBe(true);
+        Expect(result.includes('tree')).toBe(true);
     }
 }
